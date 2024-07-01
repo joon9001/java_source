@@ -6,10 +6,10 @@ PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
 <mapper namespace="dev">
 
  <select id="selectDataAll" resultType="dto">
-  select * from sangdata order by code asc
+  select * from sangdata
  </select>
  
- <select id="selectDataById" parameterType="string" resultType="dto">
+  <select id="selectDataById" parameterType="string" resultType="dto">
   select code,sang,su,dan from sangdata where code = #{code}
  </select>
  

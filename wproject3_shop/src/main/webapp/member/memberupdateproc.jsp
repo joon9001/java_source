@@ -5,10 +5,12 @@
 
 <jsp:useBean id="memberBean" class="pack.member.MemberBean" scope="page" />
 <jsp:setProperty property="*" name="memberBean" />
+<%--memberupdate.jsp 파일의 form 태그에서 보낸 모든 파라미터값이 setproperty를 통해 memberBean의 setter로 등록된다. --%>
 <jsp:useBean id="memberMgr" class="pack.member.MemberMgr" />
 
 <%
 String id = (String)session.getAttribute("idKey");
+//위의 setproperty로 수정된 memberBean 객체와 올바른 id 값을 가지고 memberUpdate()로 간다.
 boolean b = memberMgr.memberUpdate(memberBean, id); 
 
 if(b){

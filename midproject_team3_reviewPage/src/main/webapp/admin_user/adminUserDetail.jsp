@@ -66,28 +66,7 @@ out.println("user");
 			<button id="btnDelete" class="btn">삭제</button> -->
 		</div>
 			
-			  <div id="userDetailModal" class="modal2" style="display:none;">
-                <div class="modal-content">
-                    <span class="close">&times;</span>
-                    <h3>회원 정보 수정</h3>
-                    <form id="updateForm">
-                        <input type="hidden" name="no" value="${user.no}">
-                        <label for="id">아이디:</label>
-                        <input type="text" id="id" name="id" value="${user.id}" readonly><br><br>
-                        <label for="pw">비밀번호:</label>
-                        <input type="password" id="pw" name="pw" value="${user.pw}"><br><br>
-                        <label for="uname">이름:</label>
-                        <input type="text" id="uname" name="uname" value="${user.uname}"><br><br>
-                        <label for="email">이메일:</label>
-                        <input type="text" id="email" name="email" value="${user.email}"><br><br>
-                        <label for="gender">성별:</label>
-                        <input type="text" id="gender" name="gender" value="${user.gender}"><br><br>
-                        <label for="signout_is">탈퇴 여부:</label>
-                        <input type="text" id="signout_is" name="signout_is" value="${user.signout_is}"><br><br>
-                        <button type="submit">저장</button>
-                    </form>
-                </div>
-            </div>
+			  
 			
 			
 			</div>

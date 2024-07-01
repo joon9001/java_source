@@ -64,31 +64,8 @@ $(document).ready(function() {
         $("#userDetailModal").hide();
     });
 
-    $("#updateForm").submit(function(event) {
-        event.preventDefault();
-        $.ajax({
-            type: "POST",
-            url: "userUpdateProc.jsp",
-            data: $(this).serialize(),
-            success: function(response) {
-                alert("수정되었습니다.");
-                $("#userDetailModal").hide();
-                location.reload();
-            },
-            error: function(error) {
-                alert("수정 중 오류가 발생했습니다.");
-            }
-        });
-    });
+  
 
-
-function memberUpdateOk(){ 
-	//입력자료 오류검사 생략
-	document.updateForm.submit();
-}
-function memberUpdateCancel(){
-	location.href="../admin_user/adminUser.jsp";
-}
 
 
 
