@@ -1,0 +1,8 @@
+[submodule "java_source"]
+	path = java_source
+	url = https://github.com/joon9001/java_source
+
+
+[submodule "wproject3_shop"]
+    path = wproject3_shop
+    url = https://github.com/joon9001/java_source
